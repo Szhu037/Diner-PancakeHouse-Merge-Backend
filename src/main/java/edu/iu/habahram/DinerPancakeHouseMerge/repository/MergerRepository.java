@@ -4,10 +4,12 @@ import edu.iu.habahram.DinerPancakeHouseMerge.model.CafeMenu;
 import edu.iu.habahram.DinerPancakeHouseMerge.model.DinerMenu;
 import edu.iu.habahram.DinerPancakeHouseMerge.model.Menu;
 import edu.iu.habahram.DinerPancakeHouseMerge.model.PancakeHouseMenu;
+import org.springframework.stereotype.Repository;
 
 import java.awt.*;
 import java.util.ArrayList;
 
+@Repository
 public class MergerRepository {
     public ArrayList<Menu> getTheMenus() {
         ArrayList<Menu> menus = new ArrayList<>();
