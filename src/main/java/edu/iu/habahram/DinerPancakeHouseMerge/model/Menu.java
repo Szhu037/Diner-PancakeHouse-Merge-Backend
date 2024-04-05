@@ -1,3 +1,5 @@
+package edu.iu.habahram.DinerPancakeHouseMerge.model;
+
 import edu.iu.habahram.DinerPancakeHouseMerge.model.MenuComponent;
 import edu.iu.habahram.DinerPancakeHouseMerge.model.MenuItem;
 
@@ -34,6 +36,19 @@ public class Menu extends MenuComponent{
     }
 
     public MenuItem[] getItems() {
-        //TODO
+        ArrayList<MenuItem> items = new ArrayList<>();
+        for (MenuComponent component : menuComponents) {
+            if (component instanceof MenuItem) {
+                items.add((MenuItem) component);
+            }
+            else {
+                Menu subMenu = (Menu) component;
+                MenuItem[] subMenuItems = subMenu.getItems();
+                for (MenuItem item : subMenuItems) {
+                    items.add(item);
+                }
+            }
+        }
+        return items.toArray(new MenuItem[0]);
     }
 }

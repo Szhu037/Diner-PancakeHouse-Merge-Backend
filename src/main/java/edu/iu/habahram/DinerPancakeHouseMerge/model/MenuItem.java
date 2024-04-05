@@ -1,7 +1,5 @@
 package edu.iu.habahram.DinerPancakeHouseMerge.model;
 
-import edu.iu.habahram.DinerPancakeHouseMerge.model.MenuComponent;
-
 public class MenuItem extends MenuComponent {
     String name;
     String description;

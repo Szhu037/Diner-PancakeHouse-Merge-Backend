@@ -5,7 +5,6 @@ import java.util.Iterator;
 
 public class DinerMenu extends Menu {
 
-
     public DinerMenu(String name, String description) {
         super(name, description);
 
@@ -31,7 +30,6 @@ public class DinerMenu extends Menu {
         MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
         add(menuItem);
     }
-
 
     // other menu methods here
 }
