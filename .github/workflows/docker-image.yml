@@ -33,6 +33,6 @@ jobs:
 
       - name: Build and push the image
         run: |
-          docker login --username Szhu037 --password ${{secrets.ACCESS_TOKEN}} ghcr.io
-          docker build -t ghcr.io/Szhu037/Diner-PancakeHouse-Merge-Backend:latest --file Dockerfile .  
-          docker push ghcr.io/Szhu037/Diner-PancakeHouse-Merge-Backend:latest 
+          docker login --username szhu037 --password ${{secrets.ACCESS_TOKEN}} ghcr.io
+          docker build -t ghcr.io/szhu037/Diner-PancakeHouse-Merge-Backend:latest --file Dockerfile .  
+          docker push ghcr.io/szhu037/Diner-PancakeHouse-Merge-Backend:latest 
